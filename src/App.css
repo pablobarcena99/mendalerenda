@@ -1,25 +1,28 @@
 @font-face {
-    font-family: DxSitrus;
-    font-weight: bold;
-    src: url("./fonts/DxSitrus.otf") format("opentype"), url("./fonts/DxSitrus.woff") format("woff");
+  font-family: DxSitrus;
+  font-weight: bold;
+  src: url("./fonts/DxSitrus.otf") format("opentype"),
+    url("./fonts/DxSitrus.woff") format("woff");
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
   font-family: DxSitrus;
   margin: 0px;
   padding: 0px;
 }
 
-h3,p{
+h3,
+p {
   font-family: poppins;
 }
 
-img{
+img {
   height: auto;
   width: auto;
   max-width: 100%;
+  padding: 0px !important;
 }
 
-#root{
-  background-color: black;
+#root {
+  background-color: rgb(0, 0, 0);
 }

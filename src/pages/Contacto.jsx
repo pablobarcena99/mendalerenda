@@ -1,10 +1,11 @@
 import React from 'react'
+import Card from '../components/Card'
 
 export default function Contacto() {
   return (
     <div className="container">
       <div className="row">
-        <h1>Contacto</h1>
+        <Card name="Contacto" text={["telefono", "direccion"]}/>
       </div>
     </div>
   )

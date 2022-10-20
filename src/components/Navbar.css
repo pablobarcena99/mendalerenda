@@ -23,3 +23,7 @@
 .nav-link{
   text-align: right;
 }
+
+.navbar{
+  background-color: #533A71 !important;
+}
