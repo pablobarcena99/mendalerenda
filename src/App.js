@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+// Fontawesoome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import Galeria from './pages/Galeria';
+import Contacto from './pages/Contacto';
+
+library.add(fab, fas);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route index element={<Main />} />
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
+      <Footer/>
+    </>
   );
 }
 

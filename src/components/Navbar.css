@@ -1,0 +1,25 @@
+.navbar-brand{
+  padding-bottom: 0px !important;
+}
+
+#isologo{
+  width: 49px;
+  height: auto;
+  position: relative;
+  bottom: 1px;
+  left: -6px;
+}
+
+
+/* Bootstrap */
+.navbar-toggler{
+  border-radius: 0px !important;
+  transition: none !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+.nav-link{
+  text-align: right;
+}
