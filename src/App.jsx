@@ -18,7 +18,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route index element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
