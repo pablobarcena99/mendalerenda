@@ -8,45 +8,41 @@ import { useState } from "react";
 
 function BasicExample() {
   const [expanded, setExpanded] = useState(false);
-
   return (
     <>
       <Navbar
-        className="navbar"
-        bg="dark"
-        expand="lg"
-        sticky="top"
-        variant="dark"
-        expanded={expanded}
-      >
+        className='navbar'
+        bg='light'
+        expand='lg'
+        sticky='top'
+        variant='light'
+        expanded={expanded}>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href='#home'>
             MENDA LERENDA
-            <img id="isologo" src={require("../images/lips.png")} alt="shirt" />
+            <img id='isologo' src={require("../images/lips.png")} alt='shirt' />
           </Navbar.Brand>
           <Navbar.Toggle
-            type="btn"
-            aria-controls="basic-navbar-nav"
-            className="btn border-0"
+            type='btn'
+            aria-controls='basic-navbar-nav'
+            className='btn border-0'
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto justify-content-end flex-grow-1 pe-3">
-              <Nav.Link onClick={() => setExpanded(false)} as={Link} to="/">
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto justify-content-end flex-grow-1 pe-3'>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='/'>
                 Inicio
               </Nav.Link>
               <Nav.Link
                 onClick={() => setExpanded(false)}
                 as={Link}
-                to="/galeria"
-              >
+                to='/galeria'>
                 Galeria
               </Nav.Link>
               <Nav.Link
                 onClick={() => setExpanded(false)}
                 as={Link}
-                to="/contacto"
-              >
+                to='/contacto'>
                 Contacto
               </Nav.Link>
             </Nav>

@@ -9,8 +9,6 @@
   bottom: 1px;
   left: -6px;
 }
-
-
 /* Bootstrap */
 .navbar-toggler{
   border-radius: 0px !important;
@@ -22,8 +20,4 @@
 }
 .nav-link{
   text-align: right;
-}
-
-.navbar{
-  background-color: #533A71 !important;
 }

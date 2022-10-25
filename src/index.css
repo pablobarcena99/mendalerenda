@@ -8,32 +8,12 @@ h1 {
 .banner {
   height: 500px;
 }
-.section-2 {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-.section-2 > * {
-  color: white;
-}
+
+
 .row {
   padding: 0px 0 12px 0 !important;
 }
-.section-2 > img {
-  max-height: 450px;
-  width: auto;
-  object-fit: contain;
-}
+
 .carousel-item {
   max-height: 400px !important;
-}
-.banner-img {
-  height: 50vw;
-  width: 100%;
-  object-fit: cover;
-  object-position: -0 -158px;
-  object-position: center;
-  padding: 0px;
 }
