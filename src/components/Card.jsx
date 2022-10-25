@@ -20,10 +20,6 @@ const StyledCard = styled.div`
     max-height: 500px;
     object-fit: cover;
     object-position: center;
-    :hover {
-      transform: translateY(-10px) rotate(1deg);
-      box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
-    }
   }
 `;
 const Title = styled.h2`
