@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.e80d74a9.css",
-    "main.js": "./static/js/main.04ecd2f3.js",
-    "static/media/banner.png": "./static/media/banner.7ccec5d6699e64f5d1cd.png",
-    "static/media/shirt1.png": "./static/media/shirt1.9aa69aec751b1b73ac53.png",
-    "static/media/white shirt.png": "./static/media/white shirt.b49934aaaba5135e9df1.png",
-    "static/media/lips.png": "./static/media/lips.bef7e76d261888faa2f0.png",
-    "static/media/DxSitrus.otf": "./static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
-    "static/media/DxSitrus.woff": "./static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
-    "index.html": "./index.html",
-    "main.e80d74a9.css.map": "./static/css/main.e80d74a9.css.map",
-    "main.04ecd2f3.js.map": "./static/js/main.04ecd2f3.js.map"
+    "main.css": "/static/css/main.bf313814.css",
+    "main.js": "/static/js/main.5dbc3781.js",
+    "static/media/fondo.png": "/static/media/fondo.6554509cc39d5a5f9c6d.png",
+    "static/media/banner.png": "/static/media/banner.7ccec5d6699e64f5d1cd.png",
+    "static/media/fondo emr 22.png": "/static/media/fondo emr 22.f5481ba34125e9f22436.png",
+    "static/media/logo tour.png": "/static/media/logo tour.9838504824e5449d79ef.png",
+    "static/media/shirt1.png": "/static/media/shirt1.9aa69aec751b1b73ac53.png",
+    "static/media/white shirt.png": "/static/media/white shirt.b49934aaaba5135e9df1.png",
+    "static/media/lips.png": "/static/media/lips.bef7e76d261888faa2f0.png",
+    "static/media/DxSitrus.otf": "/static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
+    "static/media/DxSitrus.woff": "/static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
+    "index.html": "/index.html",
+    "main.bf313814.css.map": "/static/css/main.bf313814.css.map",
+    "main.5dbc3781.js.map": "/static/js/main.5dbc3781.js.map"
   },
   "entrypoints": [
-    "static/css/main.e80d74a9.css",
-    "static/js/main.04ecd2f3.js"
+    "static/css/main.bf313814.css",
+    "static/js/main.5dbc3781.js"
   ]
 }
