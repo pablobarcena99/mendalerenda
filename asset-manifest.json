@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf313814.css",
-    "main.js": "/static/js/main.5dbc3781.js",
-    "static/media/fondo.png": "/static/media/fondo.6554509cc39d5a5f9c6d.png",
-    "static/media/banner.png": "/static/media/banner.7ccec5d6699e64f5d1cd.png",
-    "static/media/fondo emr 22.png": "/static/media/fondo emr 22.f5481ba34125e9f22436.png",
-    "static/media/logo tour.png": "/static/media/logo tour.9838504824e5449d79ef.png",
-    "static/media/shirt1.png": "/static/media/shirt1.9aa69aec751b1b73ac53.png",
-    "static/media/white shirt.png": "/static/media/white shirt.b49934aaaba5135e9df1.png",
-    "static/media/lips.png": "/static/media/lips.bef7e76d261888faa2f0.png",
-    "static/media/DxSitrus.otf": "/static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
-    "static/media/DxSitrus.woff": "/static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
-    "index.html": "/index.html",
-    "main.bf313814.css.map": "/static/css/main.bf313814.css.map",
-    "main.5dbc3781.js.map": "/static/js/main.5dbc3781.js.map"
+    "main.css": "/mendalerenda/static/css/main.c05a2f8e.css",
+    "main.js": "/mendalerenda/static/js/main.66daa80c.js",
+    "static/media/fondo.png": "/mendalerenda/static/media/fondo.6554509cc39d5a5f9c6d.png",
+    "static/media/banner.png": "/mendalerenda/static/media/banner.7ccec5d6699e64f5d1cd.png",
+    "static/media/fondo emr 22.png": "/mendalerenda/static/media/fondo emr 22.f5481ba34125e9f22436.png",
+    "static/media/logo tour.png": "/mendalerenda/static/media/logo tour.9838504824e5449d79ef.png",
+    "static/media/shirt1.png": "/mendalerenda/static/media/shirt1.9aa69aec751b1b73ac53.png",
+    "static/media/white shirt.png": "/mendalerenda/static/media/white shirt.b49934aaaba5135e9df1.png",
+    "static/media/lips.png": "/mendalerenda/static/media/lips.bef7e76d261888faa2f0.png",
+    "static/media/DxSitrus.otf": "/mendalerenda/static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
+    "static/media/DxSitrus.woff": "/mendalerenda/static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
+    "index.html": "/mendalerenda/index.html",
+    "main.c05a2f8e.css.map": "/mendalerenda/static/css/main.c05a2f8e.css.map",
+    "main.66daa80c.js.map": "/mendalerenda/static/js/main.66daa80c.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf313814.css",
-    "static/js/main.5dbc3781.js"
+    "static/css/main.c05a2f8e.css",
+    "static/js/main.66daa80c.js"
   ]
 }
