@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mendalerenda/static/css/main.c05a2f8e.css",
-    "main.js": "/mendalerenda/static/js/main.74bc2d8a.js",
+    "main.css": "/mendalerenda/static/css/main.03f21905.css",
+    "main.js": "/mendalerenda/static/js/main.0243d581.js",
     "static/media/fondo.png": "/mendalerenda/static/media/fondo.6554509cc39d5a5f9c6d.png",
     "static/media/banner.png": "/mendalerenda/static/media/banner.7ccec5d6699e64f5d1cd.png",
     "static/media/fondo emr 22.png": "/mendalerenda/static/media/fondo emr 22.f5481ba34125e9f22436.png",
@@ -12,11 +12,11 @@
     "static/media/DxSitrus.otf": "/mendalerenda/static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
     "static/media/DxSitrus.woff": "/mendalerenda/static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
     "index.html": "/mendalerenda/index.html",
-    "main.c05a2f8e.css.map": "/mendalerenda/static/css/main.c05a2f8e.css.map",
-    "main.74bc2d8a.js.map": "/mendalerenda/static/js/main.74bc2d8a.js.map"
+    "main.03f21905.css.map": "/mendalerenda/static/css/main.03f21905.css.map",
+    "main.0243d581.js.map": "/mendalerenda/static/js/main.0243d581.js.map"
   },
   "entrypoints": [
-    "static/css/main.c05a2f8e.css",
-    "static/js/main.74bc2d8a.js"
+    "static/css/main.03f21905.css",
+    "static/js/main.0243d581.js"
   ]
 }
