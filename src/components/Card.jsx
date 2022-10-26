@@ -13,12 +13,13 @@ const StyledCard = styled.div`
   border-radius: 20px;
 
   img {
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     object-position: center;
-    background-color: white;
-    border: 4px solid white;
     border-radius: 20px;
+    width: auto;
+    border: 4px solid white;
   }
 `;
 const Title = styled.h2`
