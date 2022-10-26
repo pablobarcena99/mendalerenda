@@ -8,13 +8,11 @@ export default function Main() {
   return (
     <>
       <div className='container'>
-        <Hero />
+        {/* <Hero /> */}
         {/* <div className='row'>
           <ControlledCarousel />
         </div> */}
-        <div className="row">
-
-        </div>
+        <div className='row'></div>
         <div className='row'>
           <Card
             name='Nosotros'
@@ -33,6 +31,14 @@ export default function Main() {
         </div>
         <div className='row'>
           <Card
+            name='Estado Mental Reversible'
+            text='Solamente hemos sido nosotros mismos en un pequeño estudio haciendo las canciones que nos salían de dentro.Es un disco lleno de contrastes, de géneros, de errores, de darle mil vueltas a un tema, de canciones con 4 acordes, de alcohol, de fiesta, de sintetizadores que nos han hecho saltar del sofá, de amor , de enfados, de alguna idea que ha terminado siendo un solo de guitarra de 1 min, de amigos, de nostalgia, de felicidad, de humo en el ambiente, de llegar tarde, de madrugones, de cafe, de autotune (más de lo que admitimos🙈), de ruido, de dulzura, de picos por encima de los +0 Db y de nosotros.'
+          />
+          <Card extImg='https://res.cloudinary.com/dygvieuns/image/upload/v1666778413/menda%20lerenda/Estado_mental_reversible_ct7gni.jpg' />
+        </div>
+        <div className='row'>
+          <Card />
+          <Card
             iframe={
               <iframe
                 title='menda'
@@ -44,17 +50,6 @@ export default function Main() {
                 allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
                 loading='lazy'></iframe>
             }
-          />
-          <Card
-            name='lorem ipsum'
-            text='Contrary to popular belief, Lorem Ipsum is not simply random
-                text. <br /> It has roots in a piece of classical Latin
-                literature from 45 BC, making it over 2000 years old. Richard
-                McClintock, a Latin professor at Hampden-Sydney College in
-                Virginia, looked up one of the more obscure Latin words,
-                consectetur, from a Lorem Ipsum passage, and going through the
-                cites of the word in classical literature, discovered the
-                undoubtable source.'
           />
         </div>
       </div>

@@ -18,7 +18,7 @@ function BasicExample() {
         variant='light'
         expanded={expanded}>
         <Container>
-          <Navbar.Brand href='#home'>
+          <Navbar.Brand as={Link} to="/">
             MENDA LERENDA
             <img id='isologo' src={require("../images/lips.png")} alt='shirt' />
           </Navbar.Brand>

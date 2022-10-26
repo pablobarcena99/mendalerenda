@@ -13,17 +13,20 @@ const StyledCard = styled.div`
   border-radius: 20px;
 
   img {
-    border-top-left-radius: 37px 140px;
-    border-top-right-radius: 23px 130px;
-    border-bottom-left-radius: 110px 19px;
-    border-bottom-right-radius: 120px 24px;
     max-height: 500px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 20px;
   }
 `;
 const Title = styled.h2`
   color: pink;
+  display: flex;
+  @media(max-width: 200px){
+    font-size: 1em;
+  }
 `;
 
 export default class Card extends Component {
@@ -42,7 +45,7 @@ export default class Card extends Component {
           <Title>{this.props.name ? this.props.name : null}</Title>
           {content ? <p>{content}</p> : null}
           {this.props.img ? <img src={require(`../images/${this.props.img}`)} alt='' /> : null}
-          {this.props.extImg ? <img className="img-responsive" src={this.props.extImg} alt='' /> : null}
+          {this.props.extImg ? <img className="fluid" src={this.props.extImg} alt='' /> : null}
           {this.props.iframe ? this.props.iframe : null}
         </StyledCard>
       </div>
