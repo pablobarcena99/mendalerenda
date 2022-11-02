@@ -17,18 +17,22 @@ const StyledCard = styled.div`
     object-position: center;
     max-height: 400px;
     width: 100%;
+    filter: grayscale(100%);
+    :hover {
+      filter: none;
+      position: relative;
+    }
   }
-  iframe {
 
+  iframe {
   }
 `;
 const Title = styled.h2`
   color: pink;
   display: flex;
-
 `;
 
-export default class Card extends Component {
+export default class GalleryCard extends Component {
   render() {
     if (this.props.text) {
       if (Array.isArray(this.props.text)) {
@@ -39,13 +43,12 @@ export default class Card extends Component {
     }
 
     return (
-      <div className='col-12 col-md-6 col-lg-6 d-flex p-0'>
+      <div className='col-12 col-md-6 col-lg-4 d-flex p-0'>
         <StyledCard>
-          {this.props.name ? <Title>{this.props.name}</Title> : null}
-          {content ? <p>{content}</p> : null}
-          {this.props.img ? <img src={require(`../images/${this.props.img}`)} alt='' loading="lazy"/> : null}
-          {this.props.extImg ? <img src={this.props.extImg} alt='' loading="lazy"/> : null}
-          {this.props.iframe ? this.props.iframe : null}
+          {this.props.img ? (
+            <img src={require(`../images/${this.props.img}`)} alt='' loading='lazy' />
+          ) : null}
+          {this.props.extImg ? <img src={this.props.extImg} alt='' loading='lazy' /> : null}
         </StyledCard>
       </div>
     );

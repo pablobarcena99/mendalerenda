@@ -8,7 +8,8 @@ export default function Main() {
   return (
     <>
       <div>
-        <Hero img="logo menda white.png"/>
+        {/* <Hero img="logo menda white.png"/> */}
+        <Hero name="MENDA LERENDA"/>
         <div className="container">
           <div className='row'>
             <Card

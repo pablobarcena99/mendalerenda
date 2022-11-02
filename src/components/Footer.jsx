@@ -2,32 +2,43 @@ import React, { Component } from "react";
 import "./Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "styled-components";
+
+
+const SocialLink = styled.a`
+  color: ${props => props.color} !important;
+  padding: 4px;
+
+`;
 
 export default class Footer extends Component {
   render() {
     return (
       <>
-        <footer className='text-center text-lg-start text-white'>
+        <footer className='text-center text-lg-start text-muted'>
           <section className='container d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
             <div className='me-5 d-none d-lg-block'>
-              <span>Get connected with us on social networks:</span>
+              <span>Conecta con nosotros en nuestras redes sociales:</span>
             </div>
             <div>
-              <a href='#face' className='me-4 link-secondary'>
+              <SocialLink href='#face' className='me-4 link-secondary' color={"#3E62A9"}>
                 <FontAwesomeIcon icon={["fab", "facebook"]} />
-              </a>
-              <a href='#twi' className='me-4 link-secondary'>
+              </SocialLink>
+              <SocialLink href='#twi' className='me-4 link-secondary' color={"#2D9BF0"}>
                 <FontAwesomeIcon icon={["fab", "twitter"]} />
-              </a>
-              <a href='#go' className='me-4 link-secondary'>
-                <FontAwesomeIcon icon={["fab", "google"]} />
-              </a>
-              <a href='#ins' className='me-4 link-secondary'>
+              </SocialLink>
+              <SocialLink href='#spo' className='me-4 link-secondary' color={"#F82502"}>
+                <FontAwesomeIcon icon={["fab", "youtube"]} />
+              </SocialLink>
+              <SocialLink href='#ins' className='me-4 link-secondary' color={"#C0245E"}>
                 <FontAwesomeIcon icon={["fab", "instagram"]} />
-              </a>
-              <a href='#spo' className='me-4 link-secondary'>
+              </SocialLink>
+              <SocialLink href='#face' className='me-4 link-secondary' color={"black"}>
+                <FontAwesomeIcon icon={["fab", "apple"]} />
+              </SocialLink>
+              <SocialLink href='#face' className='me-4 link-secondary' color={"#1CD761"}>
                 <FontAwesomeIcon icon={["fab", "spotify"]} />
-              </a>
+              </SocialLink>
             </div>
           </section>
           <section className=''>
