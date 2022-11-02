@@ -4,11 +4,11 @@
 }
 
 #isologo{
-  width: 49px;
+  width: 24px;
   height: auto;
   position: relative;
   bottom: 1px;
-  left: -6px;
+  left: 4px;
 }
 /* Bootstrap */
 .navbar-toggler{

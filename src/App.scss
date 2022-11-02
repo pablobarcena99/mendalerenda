@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: DxSitrus;
+  font-weight: bold;
+  src: url("./fonts/DxSitrus.otf") format("opentype"), url("./fonts/DxSitrus.woff") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+* {
+  font-family: DxSitrus;
+  margin: 0px;
+  padding: 0px;
+}
+
+h3,
+p {
+  font-family: Poppins;
+}
+
+#root {
+  background-color: rgb(20, 20, 20);
+  background-size: contain;
+}
+
+.banner {
+  height: 500px;
+}
+
+.carousel-item {
+  max-height: 400px !important;
+}

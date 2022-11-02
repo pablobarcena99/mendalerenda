@@ -9,25 +9,23 @@ const StyledCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 12px;
-  border-radius: 20px;
+  font-size: 1rem;
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: auto;
     object-fit: contain;
     object-position: center;
-    border-radius: 20px;
-    width: auto;
-    border: 4px solid white;
+    max-height: 400px;
+    width: 100%;
+  }
+  iframe {
+
   }
 `;
 const Title = styled.h2`
   color: pink;
   display: flex;
-  @media(max-width: 200px){
-    font-size: 1em;
-  }
+
 `;
 
 export default class Card extends Component {
@@ -41,12 +39,12 @@ export default class Card extends Component {
     }
 
     return (
-      <div className='col-12 col-md-6 col-lg-6 d-flex p-0 '>
+      <div className='col-12 col-md-6 col-lg-6 d-flex p-0'>
         <StyledCard>
-          <Title>{this.props.name ? this.props.name : null}</Title>
+          {this.props.name ? <Title>{this.props.name}</Title> : null}
           {content ? <p>{content}</p> : null}
           {this.props.img ? <img src={require(`../images/${this.props.img}`)} alt='' /> : null}
-          {this.props.extImg ? <img className="fluid" src={this.props.extImg} alt='' /> : null}
+          {this.props.extImg ? <img src={this.props.extImg} alt='' /> : null}
           {this.props.iframe ? this.props.iframe : null}
         </StyledCard>
       </div>

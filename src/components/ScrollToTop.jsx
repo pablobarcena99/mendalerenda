@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Router, useLocation, useNavigate } from "react-router-dom";
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
@@ -12,6 +12,10 @@ export default function ScrollToTop() {
       behavior: "instant", // Optional if you want to skip the scrolling animation
     });
   }, [pathname]);
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 
   return null;
 }

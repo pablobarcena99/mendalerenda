@@ -16,9 +16,11 @@ function BasicExample() {
         expand='lg'
         sticky='top'
         variant='light'
-        expanded={expanded}>
+        expanded={expanded}
+        
+        >
         <Container>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to=''>
             MENDA LERENDA
             <img id='isologo' src={require("../images/lips.png")} alt='shirt' />
           </Navbar.Brand>
@@ -30,20 +32,17 @@ function BasicExample() {
           />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end flex-grow-1 pe-3'>
-              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='/'>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to=''>
                 Inicio
               </Nav.Link>
-              <Nav.Link
-                onClick={() => setExpanded(false)}
-                as={Link}
-                to='/galeria'>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='galeria'>
                 Galeria
               </Nav.Link>
-              <Nav.Link
-                onClick={() => setExpanded(false)}
-                as={Link}
-                to='/contacto'>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='contacto'>
                 Contacto
+              </Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='eventos'>
+                Eventos
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
