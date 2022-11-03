@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mendalerenda/static/css/main.ac0c9c20.css",
-    "main.js": "/mendalerenda/static/js/main.dab3e37a.js",
+    "main.css": "/mendalerenda/static/css/main.582bd868.css",
+    "main.js": "/mendalerenda/static/js/main.b40d9f50.js",
     "static/media/fondo.png": "/mendalerenda/static/media/fondo.6554509cc39d5a5f9c6d.png",
     "static/media/banner.png": "/mendalerenda/static/media/banner.7ccec5d6699e64f5d1cd.png",
     "static/media/fondo emr 22.png": "/mendalerenda/static/media/fondo emr 22.f5481ba34125e9f22436.png",
@@ -9,16 +9,15 @@
     "static/media/shirt1.png": "/mendalerenda/static/media/shirt1.9aa69aec751b1b73ac53.png",
     "static/media/white shirt.png": "/mendalerenda/static/media/white shirt.b49934aaaba5135e9df1.png",
     "static/media/lips.png": "/mendalerenda/static/media/lips.50f326a232f19c883d38.png",
-    "static/media/logo menda white.png": "/mendalerenda/static/media/logo menda white.978dab9cf2a628133b93.png",
     "static/media/LOGO-MENDA-BLACK.png": "/mendalerenda/static/media/LOGO-MENDA-BLACK.ba8ec38b8582a7e5a3f5.png",
     "static/media/DxSitrus.otf": "/mendalerenda/static/media/DxSitrus.4dbc7241052aaa0fdab9.otf",
     "static/media/DxSitrus.woff": "/mendalerenda/static/media/DxSitrus.a7d45deb9e6f5f5d5066.woff",
     "index.html": "/mendalerenda/index.html",
-    "main.ac0c9c20.css.map": "/mendalerenda/static/css/main.ac0c9c20.css.map",
-    "main.dab3e37a.js.map": "/mendalerenda/static/js/main.dab3e37a.js.map"
+    "main.582bd868.css.map": "/mendalerenda/static/css/main.582bd868.css.map",
+    "main.b40d9f50.js.map": "/mendalerenda/static/js/main.b40d9f50.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac0c9c20.css",
-    "static/js/main.dab3e37a.js"
+    "static/css/main.582bd868.css",
+    "static/js/main.b40d9f50.js"
   ]
 }
