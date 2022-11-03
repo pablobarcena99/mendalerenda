@@ -13,7 +13,10 @@ const color = {
   yellow: "#E6CD15",
 };
 
-const Title = styled.h1``;
+const Title = styled.h2`
+font-size: calc(1.9rem + 1vw);
+
+`;
 const checkFontColor = (props) => {
   const darkBackgrounds = ["black"];
   if (darkBackgrounds.includes(props.bg)) {
@@ -24,14 +27,15 @@ const checkFontColor = (props) => {
 };
 const CardInfo = styled.div`
   color: ${checkFontColor};
-
   img {
     height: auto;
     object-fit: contain;
-    object-position: center;
+    object-position: right;
     max-height: 400px;
     width: 100%;
     padding: 20px;
+
+
   }
 `;
 
@@ -42,7 +46,7 @@ export default class ModernCard extends Component {
         return (
           <CardBackground color={color[`${this.props.color}`]}>
             <Container>
-              <Row className='pt-5 pb-5 gx-5'>
+              <Row className='pt-3 pb-3 gx-5'>
                 {this.props.extImg.map((photo) => (
                   <CardInfo className='col-12 col-md-6 col-lg-4 d-flex p-0'>
                     <img src={`${photo}`} alt='' loading='lazy' />
@@ -70,7 +74,7 @@ export default class ModernCard extends Component {
         if (Array.isArray(this.props.text)) {
           var content = this.props.text.map((element) => <p>{element}</p>);
         } else {
-          content = this.props.text;
+          content = <p>{this.props.text}</p>;
         }
       }
       return (
@@ -79,7 +83,7 @@ export default class ModernCard extends Component {
             <Row className='pt-5 pb-5'>
               <CardInfo bg={this.props.color} className='col-12 col-md-6 col-lg-6'>
                 {this.props.name ? <Title>{this.props.name}</Title> : null}
-                {content ? <p>{content}</p> : null}
+                {content ? <div>{content}</div> : null}
                 {this.props.img ? (
                   <img src={require(`../images/${this.props.img}`)} alt='' loading='lazy' />
                 ) : null}

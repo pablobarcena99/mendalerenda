@@ -8,7 +8,12 @@ export default class Eventos extends Component {
     return (
       <>
         <Hero name='EVENTOS' />
-        <ModernCard name='Concierto La madre gastropub' text='17/12/2022' color='purple' />
+        <ModernCard
+          name='Concierto La madre gastropub'
+          text='17/12/2022'
+          color='purple'
+          extImg=""
+        />
         <ModernCard name='Concierto La madre gastropub' text='17/12/2022' color='black' />
         <ModernCard name='Concierto La madre gastropub' text='17/12/2022' color='green' />
       </>

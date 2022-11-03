@@ -1,9 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ControlledCarousel from "../components/Carousel";
-import Card from "../components/Card";
-import Hero from "../components/Hero";
-import { Container } from "react-bootstrap";
 import ModernCard from "../components/ModernCard";
 
 export default function Main() {
@@ -37,6 +33,20 @@ export default function Main() {
             allowFullScreen=''
             allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
             loading='lazy'></iframe>
+        }
+      />
+      <ModernCard
+        color='purple'
+        name='YOUTUBE'
+        iframe={
+          <iframe
+            width='100%'
+            height='350'
+            src='https://www.youtube.com/embed/_7HzlEf8IqM'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowfullscreen></iframe>
         }
       />
     </>
