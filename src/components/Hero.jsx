@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const HeroSection = styled.div`
-  background-color: #724e91;
+  background-color: #e6cd15;
+  min-height: 300px;
 `;
 const Image = styled.img`
   width: 100%;
@@ -10,18 +12,18 @@ const Image = styled.img`
   max-height: 120px;
 `;
 const Text = styled.h1`
-  font-size: calc(1.9rem + 1.5vw);
-  padding: 50px 0;
+  font-size: calc(1.9rem + 5vw);
+  padding: 90px 0;
   margin: 0px;
 `;
 export default class Hero extends Component {
   render() {
     return (
       <HeroSection>
-        <div className='container'>
+        <Container>
           {this.props.name ? <Text>{this.props.name}</Text> : null}
           {this.props.img ? <Image src={require(`../images/${this.props.img}`)} alt='' /> : null}
-        </div>
+        </Container>
       </HeroSection>
     );
   }

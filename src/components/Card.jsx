@@ -21,12 +21,16 @@ const StyledCard = styled.div`
   iframe {
 
   }
+  p{
+    font-size: 1.1rem;
+  }
 `;
 const Title = styled.h2`
   color: pink;
   display: flex;
 
 `;
+
 
 export default class Card extends Component {
   render() {

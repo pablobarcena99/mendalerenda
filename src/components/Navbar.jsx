@@ -17,7 +17,6 @@ function BasicExample() {
         sticky='top'
         variant='light'
         expanded={expanded}
-        
         >
         <Container>
           <Navbar.Brand as={Link} to=''>
@@ -38,11 +37,11 @@ function BasicExample() {
               <Nav.Link onClick={() => setExpanded(false)} as={Link} to='galeria'>
                 Galeria
               </Nav.Link>
-              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='contacto'>
-                Contacto
-              </Nav.Link>
               <Nav.Link onClick={() => setExpanded(false)} as={Link} to='eventos'>
                 Eventos
+              </Nav.Link>
+              <Nav.Link onClick={() => setExpanded(false)} as={Link} to='contacto'>
+                Contacto
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

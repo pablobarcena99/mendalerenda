@@ -17,11 +17,7 @@ const StyledCard = styled.div`
     object-position: center;
     max-height: 400px;
     width: 100%;
-    filter: grayscale(100%);
-    :hover {
-      filter: none;
-      position: relative;
-    }
+
   }
 
   iframe {
@@ -41,7 +37,6 @@ export default class GalleryCard extends Component {
         content = this.props.text;
       }
     }
-
     return (
       <div className='col-12 col-md-6 col-lg-4 d-flex p-0'>
         <StyledCard>
