@@ -7,7 +7,7 @@ const CardBackground = styled.div`
   background-color: ${(props) => props.color};
 `;
 const color = {
-  black: "#202020",
+  black: "#141414",
   purple: "#8783d1",
   green: "#15E6CD",
   yellow: "#E6CD15",
@@ -34,8 +34,9 @@ const CardInfo = styled.div`
     max-height: 400px;
     width: 100%;
     padding: 20px;
-
-
+    @media (max-width: 784px) {
+      object-position: center;
+    }
   }
 `;
 
@@ -87,8 +88,11 @@ export default class ModernCard extends Component {
                 {this.props.img ? (
                   <img src={require(`../images/${this.props.img}`)} alt='' loading='lazy' />
                 ) : null}
+                {this.props.iframeLeft ? this.props.iframeLeft : null}
               </CardInfo>
               <CardInfo bg={this.props.color} className='col-12 col-md-6 col-lg-6'>
+                {this.props.nameRight ? <Title>{this.props.nameRight}</Title> : null}
+
                 {this.props.extImg ? <img src={this.props.extImg} alt='' loading='lazy' /> : null}
                 {this.props.iframe ? this.props.iframe : null}
               </CardInfo>

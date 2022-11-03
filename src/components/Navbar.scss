@@ -1,6 +1,7 @@
 .navbar-brand{
   padding-bottom: 0px !important;
 
+
 }
 
 #isologo{
@@ -23,8 +24,8 @@
   text-align: right;
 }
 
-@media(max-width: 200px) {
+@media(max-width: 290px) {
   .navbar-brand{
-    display: none;
+    font-size: 0px;
   }
 }

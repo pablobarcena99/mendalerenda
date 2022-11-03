@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 const HeroSection = styled.div`
   background-color: #e6cd15;
-  min-height: 300px;
+  min-height: calc(142px + 16vw);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 const Image = styled.img`
   width: 100%;
