@@ -1,0 +1,31 @@
+.navbar-brand {
+  padding-bottom: 0px !important;
+  font-family: var(--font-dxsitrus);
+}
+
+#isologo {
+  width: 24px;
+  height: auto;
+  position: relative;
+  bottom: 1px;
+  left: 4px;
+}
+/* Bootstrap */
+.navbar-toggler {
+  border-radius: 0px !important;
+  transition: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.nav-link {
+  text-align: right;
+  font-family: var(--font-dxsitrus);
+}
+
+@media (max-width: 290px) {
+  .navbar-brand {
+    font-size: 0px;
+  }
+}
