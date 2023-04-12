@@ -2,8 +2,8 @@ import Layout from "@/components/Layout";
 import "@/styles/globals.css";
 import "../styles/Footer.css";
 import "../styles/Navbar.css";
-import localFont from "@next/font/local";
-import { Roboto } from "@next/font/google";
+import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 
 const myFont = localFont({ src: "../fonts/DxSitrus.woff", variable: "--font-dxsitrus" });
 

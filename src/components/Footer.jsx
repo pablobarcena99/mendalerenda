@@ -1,15 +1,26 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-
+import {
+  FaApple,
+  FaEnvelope,
+  FaFacebook,
+  FaHome,
+  FaInstagram,
+  FaPhone,
+  FaPhoneAlt,
+  FaSpotify,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const SocialLink = styled.a`
-  color: ${props => props.color} !important;
+  color: ${(props) => props.color} !important;
   padding: 4px;
-
 `;
-
+const FooterTitle = styled.h6`
+  font-family: var(--font-dxsitrus);
+`;
 export default class Footer extends Component {
   render() {
     return (
@@ -21,22 +32,22 @@ export default class Footer extends Component {
             </div>
             <div>
               <SocialLink href='#face' className='me-4 link-secondary' color={"#3E62A9"}>
-                <FontAwesomeIcon icon={["fab", "facebook"]} />
+                <FaFacebook />
               </SocialLink>
               <SocialLink href='#twi' className='me-4 link-secondary' color={"#2D9BF0"}>
-                <FontAwesomeIcon icon={["fab", "twitter"]} />
+                <FaTwitter />
               </SocialLink>
               <SocialLink href='#spo' className='me-4 link-secondary' color={"#F82502"}>
-                <FontAwesomeIcon icon={["fab", "youtube"]} />
+                <FaYoutube />
               </SocialLink>
               <SocialLink href='#ins' className='me-4 link-secondary' color={"#C0245E"}>
-                <FontAwesomeIcon icon={["fab", "instagram"]} />
+                <FaInstagram />
               </SocialLink>
               <SocialLink href='#face' className='me-4 link-secondary' color={"black"}>
-                <FontAwesomeIcon icon={["fab", "apple"]} />
+                <FaApple />
               </SocialLink>
               <SocialLink href='#face' className='me-4 link-secondary' color={"#1CD761"}>
-                <FontAwesomeIcon icon={["fab", "spotify"]} />
+                <FaSpotify />
               </SocialLink>
             </div>
           </section>
@@ -44,12 +55,12 @@ export default class Footer extends Component {
             <div className='container text-center text-md-start mt-5'>
               <div className='row mt-3'>
                 <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
-                  <h6 className='text-uppercase fw-bold mb-4'> MENDA LERENDA </h6>
+                  <FooterTitle className='text-uppercase fw-bold mb-4'> MENDA LERENDA </FooterTitle>
                 </div>
 
                 <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
                   {/* <!-- Links --> */}
-                  <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+                  <FooterTitle className='text-uppercase fw-bold mb-4'>Useful links</FooterTitle>
                   <p>
                     <a href='#!' className='text-reset'>
                       Pricing
@@ -72,18 +83,16 @@ export default class Footer extends Component {
                   </p>
                 </div>
                 <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
-                  <h6 className='text-uppercase fw-bold mb-4'>Contacto</h6>
+                  <FooterTitle className='text-uppercase fw-bold mb-4'>Contacto</FooterTitle>
+
+                  <p> mendalerendacontacto@gmail.com </p>
                   <p>
-                    <FontAwesomeIcon icon={["fas", "home"]} /> Miranda de Ebro, 09200
+                    {" "}
+                    <FaPhoneAlt /> +34 664 292 833{" "}
                   </p>
                   <p>
-                    <FontAwesomeIcon icon={["fas", "envelope"]} /> E-mail
-                  </p>
-                  <p>
-                    <FontAwesomeIcon icon={["fas", "phone"]} /> Pablo: +34 664 292 833
-                  </p>
-                  <p>
-                    <FontAwesomeIcon icon={["fas", "phone"]} /> Garci: +34 617 146 287
+                    {" "}
+                    <FaPhoneAlt /> +34 617 146 287{" "}
                   </p>
                 </div>
               </div>

@@ -1,4 +1,3 @@
-import { Roboto } from "@next/font/google";
 import React, { Component } from "react";
 import { Container, Row } from "react-bootstrap";
 import styled from "styled-components";
@@ -7,13 +6,7 @@ const CardBackground = styled.div`
   /* background-color: #8783d1; */
   background-color: ${(props) => props.color};
 `;
-const color = {
-  black: "#141414",
-  purple: "#8783d1",
-  green: "#15E6CD",
-  yellow: "#E6CD15",
-};
-
+const color = { black: "#141414", purple: "#8783d1", green: "#15E6CD", yellow: "#E6CD15" };
 const Title = styled.h2`
   font-size: calc(1.9rem + 1vw);
   font-family: var(--font-dxsitrus);
@@ -39,7 +32,7 @@ const CardInfo = styled.div`
       object-position: center;
     }
   }
-  p{
+  p {
     font-family: var(--font-roboto);
   }
 `;
@@ -52,23 +45,13 @@ export default class ModernCard extends Component {
           <CardBackground color={color[`${this.props.color}`]}>
             <Container>
               <Row className='pt-3 pb-3 gx-5'>
-                {this.props.extImg.map((photo) => (
-                  <CardInfo className='col-12 col-md-6 col-lg-4 d-flex p-0'>
+                {console.log(this.props.extImg)}
+                {this.props.extImg.map((photo, i) => (
+                  console.log(i),
+                  <CardInfo key={i} className='col-12 col-md-6 col-lg-4 d-flex p-0'>
                     <img src={`${photo}`} alt='' loading='lazy' />
                   </CardInfo>
                 ))}
-              </Row>
-            </Container>
-          </CardBackground>
-        );
-      } else {
-        return (
-          <CardBackground color={color[`${this.props.color}`]}>
-            <Container>
-              <Row>
-                <CardInfo className='col-12 col-md-6 col-lg-4 d-flex p-0'>
-                  {this.props.extImg ? <img src={this.props.extImg} alt='' loading='lazy' /> : null}
-                </CardInfo>
               </Row>
             </Container>
           </CardBackground>
@@ -77,7 +60,7 @@ export default class ModernCard extends Component {
     } else {
       if (this.props.text) {
         if (Array.isArray(this.props.text)) {
-          var content = this.props.text.map((element) => <p>{element}</p>);
+          var content = this.props.text.map((element) => <p key={element.id}>{element.id}</p>);
         } else {
           content = <p>{this.props.text}</p>;
         }

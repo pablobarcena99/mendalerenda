@@ -32,7 +32,7 @@ export default class GalleryCard extends Component {
   render() {
     if (this.props.text) {
       if (Array.isArray(this.props.text)) {
-        var content = this.props.text.map((element) => <p>{element}</p>);
+        var content = this.props.text.map((element) => <p key={element.id}>{element}</p>);
       } else {
         content = this.props.text;
       }

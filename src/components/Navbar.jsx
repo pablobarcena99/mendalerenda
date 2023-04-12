@@ -4,9 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import Image from "next/image";
-// import Link from "next/link";
-
+import { Link } from "react-scroll";
 
 function BasicExample() {
   const [expanded, setExpanded] = useState(false);
@@ -16,13 +14,13 @@ function BasicExample() {
         className='navbar'
         bg='light'
         expand='lg'
-        sticky='top'
+        fixed='top'
         variant='light'
         expanded={expanded}>
         <Container>
           <Navbar.Brand href='/' className=''>
             MENDA LERENDA
-            <img id='isologo' src='/lips.png' alt='lips'/>
+            <img id='isologo' src='/lips.png' alt='lips' />
           </Navbar.Brand>
           <Navbar.Toggle
             type='btn'
@@ -32,16 +30,47 @@ function BasicExample() {
           />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end flex-grow-1 pe-3'>
-              <Nav.Link onClick={() => setExpanded(false)} href=''>
+              <Nav.Link
+                as={Link}
+                to='inicio'
+                spy={true}
+                smooth={false}
+                duration={0}
+                offset={-48}
+                onClick={() => setExpanded(false)}
+                href=''>
                 Inicio
               </Nav.Link>
-              <Nav.Link onClick={() => setExpanded(false)} href=''>
+              <Nav.Link
+                as={Link}
+                to='galeria'
+                spy={true}
+                smooth={false}
+                duration={0}
+                offset={-48}
+                onClick={() => setExpanded(false)}
+                href=''>
                 Galeria
               </Nav.Link>
-              <Nav.Link onClick={() => setExpanded(false)} href=''>
+              <Nav.Link
+                as={Link}
+                to='eventos'
+                spy={true}
+                smooth={false}
+                duration={0}
+                offset={-48}
+                onClick={() => setExpanded(false)}
+                href=''>
                 Eventos
               </Nav.Link>
-              <Nav.Link onClick={() => setExpanded(false)} to=''>
+              <Nav.Link
+                as={Link}
+                to='eventos'
+                spy={true}
+                smooth={true}
+                duration={0}
+                onClick={() => setExpanded(false)}
+                href=''>
                 Contacto
               </Nav.Link>
             </Nav>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const HeroSection = styled.div`
   background-color: #e6cd15;
-  min-height: calc(142px + 16vw);
+  min-height: calc(120px + 16vw);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -15,9 +15,10 @@ const Image = styled.img`
   max-height: 120px;
 `;
 const Text = styled.h1`
-  font-size: calc(1.9rem + 5vw);
-  padding: 90px 0;
+  font-size: calc(1rem + 5vw);
+  padding: 50px 0;
   margin: 0px;
+  font-family: var(--font-dxsitrus);
 `;
 export default class Hero extends Component {
   render() {
