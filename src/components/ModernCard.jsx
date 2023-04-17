@@ -44,7 +44,7 @@ export default class ModernCard extends Component {
         return (
           <CardBackground color={color[`${this.props.color}`]}>
             <Container>
-              <Row className='pt-3 pb-3 gx-5'>
+              <Row className=''>
                 {console.log(this.props.extImg)}
                 {this.props.extImg.map((photo, i) => (
                   console.log(i),

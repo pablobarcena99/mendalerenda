@@ -17,7 +17,6 @@ const StyledCard = styled.div`
     object-position: center;
     max-height: 400px;
     width: 100%;
-
   }
 
   iframe {

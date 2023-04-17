@@ -63,7 +63,7 @@ function BasicExample() {
                 href=''>
                 Eventos
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 as={Link}
                 to='eventos'
                 spy={true}
@@ -72,7 +72,7 @@ function BasicExample() {
                 onClick={() => setExpanded(false)}
                 href=''>
                 Contacto
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

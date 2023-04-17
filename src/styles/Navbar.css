@@ -18,11 +18,14 @@
 
 .navbar-toggler:focus {
   box-shadow: none !important;
+  color: black;
 }
 .nav-link {
   text-align: right;
   font-family: var(--font-dxsitrus);
 }
+
+
 
 @media (max-width: 290px) {
   .navbar-brand {
