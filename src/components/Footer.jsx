@@ -16,7 +16,7 @@ import {
 import { Col, Container, Row } from "react-bootstrap";
 
 const SocialLink = styled.a`
-  font-size: 20px;
+  font-size: 25px;
   color: ${(props) => props.color} !important;
   padding: 4px;
 `;

@@ -77,11 +77,11 @@ export default function Home() {
       <ModernCard
         gallery
         extImg={[
-          "https://res.cloudinary.com/dygvieuns/image/upload/v1681749115/menda-48_itvdkp.jpg",
-          "https://res.cloudinary.com/dygvieuns/image/upload/v1681749111/menda-35_yg5xbx.jpg",
-          "https://res.cloudinary.com/dygvieuns/image/upload/v1681749110/menda-14_ub5pji.jpg",
-          "https://res.cloudinary.com/dygvieuns/image/upload/v1681749107/menda-19_rt7oro.jpg",
-          "https://res.cloudinary.com/dygvieuns/image/upload/v1681749106/menda-2_j6tvgz.jpg",
+          "https://res.cloudinary.com/dygvieuns/image/upload/c_scale,h_960/v1681749115/menda-48_itvdkp.jpg",
+          "https://res.cloudinary.com/dygvieuns/image/upload/c_scale,h_960/v1681749111/menda-35_yg5xbx.jpg",
+          "https://res.cloudinary.com/dygvieuns/image/upload/c_scale,h_960/v1681749110/menda-14_ub5pji.jpg",
+          "https://res.cloudinary.com/dygvieuns/image/upload/c_scale,h_960/v1681749107/menda-19_rt7oro.jpg",
+          "https://res.cloudinary.com/dygvieuns/image/upload/c_scale,h_960/v1681749106/menda-2_j6tvgz.jpg",
         ]}
         color='black'
       />
