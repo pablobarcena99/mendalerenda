@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>Menda Lerenda</title>
-        <link rel='shortcut icon' href='/public/lips.png' />
+        <link rel='icon' href='/lips.png' />
       </Head>
       <header>
         <Navbar />
