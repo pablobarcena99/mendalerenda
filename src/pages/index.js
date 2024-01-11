@@ -67,10 +67,10 @@ export default function Home() {
         }
       />
 
-      <Element id='eventos'>
+      {/* <Element id='eventos'>
         <Hero name='EVENTOS'></Hero>
-      </Element>
-      <ModernCard name='Ebrovisión' text='/09/2023' color='purple' extImg='' />
+      </Element> */}
+      {/* <ModernCard name='Ebrovisión' text='/09/2023' color='purple' extImg='' /> */}
       <Element id='galeria'>
         <Hero name='GALERÍA' />
       </Element>
